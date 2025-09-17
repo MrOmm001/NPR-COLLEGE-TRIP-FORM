@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img class="bg" src="bg.jpg" alt="NPR AUTO COLLEGE">
+    <video autoplay muted loop class="bg">
+  <source src="bg-video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
     <div class="container">
         <h1>Welcome to Nimapara Auto US Trip form</h3>
         <p>Enter your details and submit this form to confirm your participation in the trip </p>
@@ -18,16 +22,22 @@
         }
     ?>
         <form action="index.php" method="post">
-            <input type="text" name="name" id="name" placeholder="Enter your name">
-            <input type="text" name="age" id="age" placeholder="Enter your Age">
-            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
-            <input type="email" name="email" id="email" placeholder="Enter your email">
-            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
-            <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other information here"></textarea>
+            <input class="transparent-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="transparent-input" type="text" name="age" id="age" placeholder="Enter your Age">
+            <input class="transparent-input" type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input class="transparent-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <input class="transparent-input" type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <textarea class="transparent-input" name="desc" id="desc" cols="30" rows="10" placeholder="Enter any other information here"></textarea>
             <button class="btn">Submit</button> 
         </form>
     </div>
     <script src="index.js"></script>
     
 </body>
+
+</html>
+    <script src="index.js"></script>
+    
+</body>
+
 </html>
